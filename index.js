@@ -1,9 +1,9 @@
 // Code your solution in this file
 function findMatching(drivers, name){
   let matchingDrivers = drivers.filter(function(driver)){
-    if (name===driver){
+    if (name.toLowerCase() === driver.toLowerCase()){
       return true
-    } else{
+    } else {
       return false
     }
   }
